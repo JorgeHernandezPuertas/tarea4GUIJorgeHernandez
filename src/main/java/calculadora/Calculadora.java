@@ -25,6 +25,7 @@ public class Calculadora {
         // tamaño justo
     	ventana.setVisible(true);
     	ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ventana.setResizable(false);
     	ventana.pack();
         
     }

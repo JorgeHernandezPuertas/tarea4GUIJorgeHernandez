@@ -34,7 +34,7 @@ public class PanelPrincipal extends JPanel implements ActionListener {
         // Creamos el panel de botones
         botones = new PanelBotones();
         // Creamos el área de texto
-        areaTexto = new JTextArea(5, 50);
+        areaTexto = new JTextArea(5, 30);
         areaTexto.setEditable(false);
         areaTexto.setBackground(Color.white);
 
@@ -89,7 +89,7 @@ public class PanelPrincipal extends JPanel implements ActionListener {
                 }
             
             } // Si no es una expresion de calculo con dos operandos lo dejo igual
-            
+       
         // Si es otro botón lo escribo
         } else if (o instanceof JButton) {
             areaTexto.setText(this.areaTexto.getText() + ((JButton) o).getText());
